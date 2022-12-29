@@ -34,6 +34,28 @@ packer.startup(function()
   use "williamboman/nvim-lsp-installer"
   use "LinArcX/telescope-command-palette.nvim"
   use 'onsails/lspkind-nvim'
+  use 'mbbill/undotree'
+  use 'scrooloose/nerdtree'
+  use 'jistr/vim-nerdtree-tabs'
+  use 'tpope/vim-commentary'
+  use 'tpope/vim-fugitive'
+  use 'airblade/vim-gitgutter'
+  use 'vim-scripts/grep.vim'
+  use 'vim-scripts/CSApprox'
+  use 'Raimondi/delimitMate'
+  use 'majutsushi/tagbar'
+  use 'dense-analysis/ale'
+  use 'Yggdroot/indentLine'
+  use 'editor-bootstrap/vim-bootstrap-updater'
+  use 'tpope/vim-rhubarb' 
+  use 'tomasr/molokai'
+  use 'nvim-lualine/lualine.nvim'
+  use 'kyazdani42/nvim-web-devicons'
+  use 'rmagatti/auto-session'
+  use 'majutsushi/tagbar'
+  use 'xolox/vim-misc'
+  use 'xolox/vim-session'
+  use 'sbdchd/neoformat'
 
   use {
     'nvim-treesitter/nvim-treesitter',

@@ -8,6 +8,9 @@ require('telescope').setup({
         { "Find References", ':lua vim.lsp.buf.references'},
         { "Hover", ':Lspsaga hover_doc' },
         { "Code Action", ':Lspsaga code_action' },
+        { "References", ':Telescope grep_string theme=cursor' },
+	{ "JSON conceallevel=0", ':set conceallevel=0' },
+
       },
       {"File",
         { "entire selection (C-a)", ':call feedkeys("GVgg")' },
