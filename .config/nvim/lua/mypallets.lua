@@ -10,7 +10,8 @@ require('telescope').setup({
         { "Code Action", ':Lspsaga code_action' },
         { "References", ':Telescope grep_string theme=cursor' },
 	{ "JSON conceallevel=0", ':set conceallevel=0' },
-
+	{ "Peek Def", ':Lspsaga peek_definition' },
+	{ "LSP Finder", ':Lspsaga lsp_finder' },
       },
       {"File",
         { "entire selection (C-a)", ':call feedkeys("GVgg")' },
