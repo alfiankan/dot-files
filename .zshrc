@@ -13,8 +13,7 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 #ZSH_THEME="powerlevel10k/powerlevel10k"
 
-plugins=(git macos zsh-syntax-highlighting zsh-autosuggestions zsh_codex)
-bindkey '^X' create_completion
+plugins=(git macos zsh-syntax-highlighting zsh-autosuggestions)
 
 
 source $ZSH/oh-my-zsh.sh
@@ -34,6 +33,8 @@ export HOMEBREW_GITHUB_API_TOKEN=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
 export PATH="$PATH:$(go env GOPATH)/bin"
 
 alias bcm="sh /Users/alfiankan/bcm.sh"
+
+alias octovm="ssh ubuntu@54.91.111.71"
 
 alias gcloud="/Users/alfiankan/google-cloud-sdk/bin/gcloud"
 
@@ -79,4 +80,20 @@ if [ -f '/Users/alfiankan/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
+export OPENAI_API_KEY=
+export OPENAI_AI_KEY=
+
 export PATH="$PATH:$HOME/nvim-mac/bin"
+
+
+
+# pnpm
+export PNPM_HOME="/Users/alfiankan/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
+
+
+# llvm
+
+export LLVM_PATH="/opt/homebrew/Cellar/llvm/15.0.7_1/bin"
+export PATH="$LLVM_PATH:$PATH"
