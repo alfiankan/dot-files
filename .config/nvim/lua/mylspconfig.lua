@@ -20,10 +20,21 @@ capabilities = require('cmp_nvim_lsp').default_capabilities
 
 local _lspconfig = require('lspconfig')
 
-_lspconfig['pyright'].setup{
-    on_attach = on_attach,
-    flags = lsp_flags,
+local python_root_files = {
+  'WORKSPACE', -- added for Bazel; items below are from default config
+  'pyproject.toml',
+  'setup.py',
+  'setup.cfg',
+  'requirements.txt',
+  'Pipfile',
+  'pyrightconfig.json',
 }
+
+require('lspconfig')["pyright"].setup {
+    on_attach = on_attach,
+    root_dir = _lspconfig.util.root_pattern(unpack(python_root_files))
+}
+
 
 require('lspconfig')['jsonls'].setup{
     on_attach = on_attach,
@@ -47,10 +58,7 @@ require('lspconfig')['tailwindcss'].setup{
     flags = lsp_flags,
 }
 
-require('lspconfig')['sumneko_lua'].setup{
-    on_attach = on_attach,
-    flags = lsp_flags,
-}
+
 
 require('lspconfig').tsserver.setup{
   filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
@@ -66,6 +74,15 @@ require('lspconfig')['rust_analyzer'].setup{
     }
 }
 
+require('lspconfig').ruff_lsp.setup {
+  on_attach = on_attach,
+  init_options = {
+    settings = {
+      -- Any extra CLI arguments for `ruff` go here.
+      args = {},
+    }
+  }
+}
 
 
 

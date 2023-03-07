@@ -54,6 +54,12 @@ packer.startup(function()
   use 'xolox/vim-misc'
   use 'xolox/vim-session'
   use 'sbdchd/neoformat'
+  use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+  use 'mfussenegger/nvim-dap'
+
+  use 'williamboman/mason.nvim'
+  use 'jay-babu/mason-nvim-dap.nvim'
+  use 'mfussenegger/nvim-dap-python'
 
 
   use {
@@ -90,12 +96,16 @@ packer.startup(function()
     requires = { 'tjdevries/colorbuddy.nvim' }
   }
   use 'norcalli/nvim-colorizer.lua'
+  use "folke/neodev.nvim"
+
 
    -- Bootstrap packer on fresh installations.
   if packer_bootstrap then
     packer.sync()
   end
 end)
+
+
 
 require('telescope').setup {
   extensions = {
@@ -111,4 +121,24 @@ require('telescope').setup {
 -- To get fzf loaded and working with telescope, you need to call
 -- load_extension, somewhere after setup function:
 require('telescope').load_extension('fzf')
+
+require("neodev").setup({
+  library = { plugins = { "nvim-dap-ui" }, types = true },
+})
+
+ local dap = require('dap')
+
+
+
+dap.configurations.python = {
+      {
+        type = 'python';
+        request = 'launch';
+        name = "Launch file";
+        program = "${file}";
+        pythonPath = function()
+          return '/opt/homebrew/bin/python3'
+        end;
+      },
+}
 
