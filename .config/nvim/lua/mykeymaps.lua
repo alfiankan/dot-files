@@ -14,6 +14,13 @@ keymap("n", "fr", ":Lspsaga lsp_finder<cr>", { noremap = true, silent = true })
 keymap("n", "ld", ":Lspsaga show_line_diagnostics<cr>", { noremap = true, silent = true })
 keymap("n", "B", ":Telescope buffers<cr>", { noremap = true, silent = true })
 
+-- moveline down
+keymap("n", "mj", ":m .+1<cr>==", { noremap = true, silent = true })
+keymap("v", "mj", ":m '>+1<cr>gv=gv", { noremap = true, silent = true })
+
+-- moveline up
+keymap("n", "mk", ":m .-2<cr>==", { noremap = true, silent = true })
+keymap("v", "mk", ":m '<-2<cr>gv=gv", { noremap = true, silent = true })
 
 keymap("n", "<leader><space>", ":Telescope command_palette<cr>", { noremap = true, silent = true })
 
