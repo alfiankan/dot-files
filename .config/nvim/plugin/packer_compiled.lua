@@ -160,6 +160,11 @@ _G.packer_plugins = {
     path = "/Users/alfiankan/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  moonfly = {
+    loaded = true,
+    path = "/Users/alfiankan/.local/share/nvim/site/pack/packer/start/moonfly",
+    url = "https://github.com/bluz71/vim-moonfly-colors"
+  },
   ["neodev.nvim"] = {
     loaded = true,
     path = "/Users/alfiankan/.local/share/nvim/site/pack/packer/start/neodev.nvim",
@@ -205,6 +210,11 @@ _G.packer_plugins = {
     path = "/Users/alfiankan/.local/share/nvim/site/pack/packer/start/nvim-dap-ui",
     url = "https://github.com/rcarriga/nvim-dap-ui"
   },
+  ["nvim-dap-virtual-text"] = {
+    loaded = true,
+    path = "/Users/alfiankan/.local/share/nvim/site/pack/packer/start/nvim-dap-virtual-text",
+    url = "https://github.com/theHamsta/nvim-dap-virtual-text"
+  },
   ["nvim-lsp-installer"] = {
     loaded = true,
     path = "/Users/alfiankan/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer",
@@ -224,6 +234,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/alfiankan/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
+  },
+  onehalf = {
+    loaded = true,
+    path = "/Users/alfiankan/.local/share/nvim/site/pack/packer/start/onehalf",
+    url = "https://github.com/sonph/onehalf"
   },
   ["packer.nvim"] = {
     loaded = true,

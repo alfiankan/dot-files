@@ -12,6 +12,7 @@ keymap("n", "pd", ":Lspsaga peek_definition<cr>", { noremap = true, silent = tru
 keymap("n", "ca", ":Lspsaga code_action<cr>", { noremap = true, silent = true })
 keymap("n", "fr", ":Lspsaga lsp_finder<cr>", { noremap = true, silent = true })
 keymap("n", "ld", ":Lspsaga show_line_diagnostics<cr>", { noremap = true, silent = true })
+keymap("n", "B", ":Telescope buffers<cr>", { noremap = true, silent = true })
 
 
 keymap("n", "<leader><space>", ":Telescope command_palette<cr>", { noremap = true, silent = true })

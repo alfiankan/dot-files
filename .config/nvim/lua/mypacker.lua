@@ -56,10 +56,13 @@ packer.startup(function()
   use 'sbdchd/neoformat'
   use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
   use 'mfussenegger/nvim-dap'
+  use 'theHamsta/nvim-dap-virtual-text'
 
   use 'williamboman/mason.nvim'
   use 'jay-babu/mason-nvim-dap.nvim'
   use 'mfussenegger/nvim-dap-python'
+  use { "bluz71/vim-moonfly-colors", as = "moonfly" }
+
 
 
   use {
@@ -97,6 +100,7 @@ packer.startup(function()
   }
   use 'norcalli/nvim-colorizer.lua'
   use "folke/neodev.nvim"
+  use "sonph/onehalf"
 
 
    -- Bootstrap packer on fresh installations.

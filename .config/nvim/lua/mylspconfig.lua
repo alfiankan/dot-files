@@ -30,7 +30,7 @@ local python_root_files = {
   'pyrightconfig.json',
 }
 
-require('lspconfig')["pyright"].setup {
+require('lspconfig')["jedi_language_server"].setup {
     on_attach = on_attach,
     root_dir = _lspconfig.util.root_pattern(unpack(python_root_files))
 }
@@ -41,7 +41,10 @@ require('lspconfig')['jsonls'].setup{
     flags = lsp_flags,
 }
 
-
+require('lspconfig')['phpactor'].setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+}
 
 require('lspconfig')['gopls'].setup{
     on_attach = on_attach,
