@@ -14,6 +14,18 @@ Love it
 - clone this repo
 - copy `cp /path/this/repo/.config/nvim ~/.config/nvim`
 - inside nvim run packer command `:PackerSync`
+
+## Custom keymaps
+- `pd` peek definition
+- `gd` go to definition
+- `ctrl + space` open lsp auto complete
+- `K` hover info lsp
+- `Ctrl+b` open file tree
+- `Ctrl+t` open tagbar , but u need to install ctags by `brew install ctags`
+- `ca` code action
+- `fr` find references
+- `ld` line diagnosis
+- `:Neoformat` prettier
   
 <img width="727" alt="Screenshot 2023-06-18 at 20 30 37" src="https://github.com/alfiankan/dot-files/assets/40946917/dddf59a5-ffe3-440a-acee-8549f5c5940e">
 
