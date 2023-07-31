@@ -12,7 +12,7 @@ Love it
 
 ## How to Install
 - clone this repo
-- copy `cp /path/this/repo/.config/nvim ~/.config/nvim`
+- copy `cp -R /path/this/repo/.config/nvim ~/.config/nvim`
 - inside nvim run packer command `:PackerSync`
 
 ## Custom keymaps
@@ -26,7 +26,7 @@ Love it
 - `fr` find references
 - `ld` line diagnosis
 - `:Neoformat` prettier
-  
+
 <img width="727" alt="Screenshot 2023-06-18 at 20 30 37" src="https://github.com/alfiankan/dot-files/assets/40946917/dddf59a5-ffe3-440a-acee-8549f5c5940e">
 
 <img width="1440" alt="Screenshot 2023-06-18 at 20 30 49" src="https://github.com/alfiankan/dot-files/assets/40946917/e3bb0d64-8858-4faf-bd10-1bfe59543cca">
