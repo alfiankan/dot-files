@@ -30,9 +30,13 @@ local python_root_files = {
   'pyrightconfig.json',
 }
 
-require('lspconfig')["jedi_language_server"].setup {
+-- require('lspconfig')["pyright"].setup {
+--     on_attach = on_attach,
+--     root_dir = _lspconfig.util.root_pattern(unpack(python_root_files))
+-- }
+require('lspconfig')['pyright'].setup{
     on_attach = on_attach,
-    root_dir = _lspconfig.util.root_pattern(unpack(python_root_files))
+    flags = lsp_flags,
 }
 
 
@@ -77,15 +81,15 @@ require('lspconfig')['rust_analyzer'].setup{
     }
 }
 
-require('lspconfig').ruff_lsp.setup {
-  on_attach = on_attach,
-  init_options = {
-    settings = {
-      -- Any extra CLI arguments for `ruff` go here.
-      args = {},
-    }
-  }
-}
+-- require('lspconfig').ruff_lsp.setup {
+--   on_attach = on_attach,
+--   init_options = {
+--     settings = {
+--       -- Any extra CLI arguments for `ruff` go here.
+--       args = {},
+--     }
+--   }
+-- }
 
 
 

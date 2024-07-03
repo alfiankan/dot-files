@@ -62,6 +62,7 @@ packer.startup(function()
   use 'jay-babu/mason-nvim-dap.nvim'
   use 'mfussenegger/nvim-dap-python'
   use { "bluz71/vim-moonfly-colors", as = "moonfly" }
+  use { "rose-pine/neovim", name = "rose-pine" }
 
 
 

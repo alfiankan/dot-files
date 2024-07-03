@@ -3,7 +3,7 @@ vim.cmd("autocmd!")
 vim.scriptencoding = 'utf-8'
 vim.opt.encoding = 'utf-8'
 vim.opt.fileencoding = 'utf-8'
-
+vim.opt.mouse = ""
 vim.wo.number = true
 vim.g.mapleader = ' '
 vim.opt.title = true
@@ -43,4 +43,5 @@ vim.opt.wildoptions = 'pum'
 vim.opt.pumblend = 5
 vim.opt.background = 'dark'
 vim.opt.clipboard = "unnamedplus"
+vim.cmd("colorscheme rose-pine")
 

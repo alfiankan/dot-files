@@ -7,7 +7,7 @@ require('options')
 require('mylualine')
 require('mypallets')
 require('mykeymaps')
-require('neo')
+-- require('neo')
 require('treesitter')
 
 
